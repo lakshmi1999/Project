@@ -2,7 +2,7 @@
 <head>
 <title>Trust Model</title>
 
-<div id="a1"> 
+<div id="a1">
 <marquee behavior="alternate" directions="right">
 
 <h1 style="font-size:35px;color:white"> GOVERNMENT COLLEGE OF TECHNOLOGY </h1>
@@ -14,17 +14,18 @@
 <style>
 
 
-html, 
+html,
 body {
 height: 100%;
 }
 
 body {
-background-image: url("cloud2.jpg");
+background-image: url("static/img/cloud2.jpg");
 background-repeat: no-repeat;
 background-size: 100% 100%;
 }
 p{
+margin-top:60px;
 margin-left: 570px;
 font-size:18px;
 }
@@ -32,35 +33,25 @@ font-size:18px;
 background-color:white;
 }
 </style>
-<script type="text/javascript">
-function button_handlerjs()
-{
-   var n=document.getElementById("user").value;
-   var p=document.getElementById("product").value;
-   var par=document.myform.trust.value;
-   var s=eel.button_handlerpy(p)
-   window.alert(s)
-}
-</script> 
 </head>
-<body class="bg">
+<body>
 <h2 style="text-align:center;color:blue;margin-left:230px"><b><u>TRUST MODEL</u></b></h1>
-<form name="myform">
+<form action="." method="POST">
 <p><i><b>
 1.Enter your Name :<input type="text" size="30" name="uname" id="user"><br/>
 2.Select the product that you want to buy:<select name="product">
-<option>Laptop</option>
-<option>Phone</option>
-<option>Watch</option>
-<option>Tablet</option>
-<option>Joystick</option>
+<option>LAPTOP</option>
+<option>PHONE</option>
+<option>WATCH</option>
+<option>TABLET</option>
+<option>JOYSTICK</option>
 </select><br/>
-3.Trust Calculation Parameters:</br><input type="radio" name="trust" value="feedback" style="margin-left:120px">Feedback<br/>
-<input type="radio" name="trust" value="cost" style="margin-left:120px">Cost<br/>
-<input type="radio" name="trust" value="feedback+cost" style="margin-left:120px">Feedback and Cost<br/>
+3.Trust Calculation Parameters:</br><input type="radio" value="Feedback" name="trust" style="margin-left:120px">Feedback<br/>
+<input type="radio" name="trust" value="Cost" style="margin-left:120px">Cost<br/>
+<input type="radio" name="trust" value="Feedback+Cost"  style="margin-left:120px">Feedback and Cost<br/><br/>
 <button style="margin-left:120px;background-color: #44336" onclick="button_handlerjs()">Search</button></b></i>
 </p>
 </form>
 </body>
-
+</html>
 
